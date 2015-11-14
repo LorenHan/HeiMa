@@ -15,7 +15,7 @@
 		CF58E7911BF6FA05000D47C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF58E78F1BF6FA05000D47C9 /* LaunchScreen.storyboard */; };
 		CF58E79C1BF6FA05000D47C9 /* _2_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58E79B1BF6FA05000D47C9 /* _2_____Tests.m */; };
 		CF58E7A71BF6FA05000D47C9 /* _2_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF58E7A61BF6FA05000D47C9 /* _2_____UITests.m */; };
-		CF58E7B51BF6FAD4000D47C9 /* 素材 in Resources */ = {isa = PBXBuildFile; fileRef = CF58E7B41BF6FAD4000D47C9 /* 素材 */; };
+		CFF9076B1BF7445B000B45D6 /* imageFile in Resources */ = {isa = PBXBuildFile; fileRef = CFF9076A1BF7445B000B45D6 /* imageFile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		CF58E7A21BF6FA05000D47C9 /* 02-按钮操作UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02-按钮操作UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF58E7A61BF6FA05000D47C9 /* _2_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2_____UITests.m"; sourceTree = "<group>"; };
 		CF58E7A81BF6FA05000D47C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF58E7B41BF6FAD4000D47C9 /* 素材 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "素材"; sourceTree = "<group>"; };
+		CFF9076A1BF7445B000B45D6 /* imageFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imageFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		CF58E7811BF6FA05000D47C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF58E7B41BF6FAD4000D47C9 /* 素材 */,
+				CFF9076A1BF7445B000B45D6 /* imageFile */,
 				CF58E7821BF6FA05000D47C9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -249,9 +249,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF9076B1BF7445B000B45D6 /* imageFile in Resources */,
 				CF58E7911BF6FA05000D47C9 /* LaunchScreen.storyboard in Resources */,
 				CF58E78E1BF6FA05000D47C9 /* Assets.xcassets in Resources */,
-				CF58E7B51BF6FAD4000D47C9 /* 素材 in Resources */,
 				CF58E78C1BF6FA05000D47C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +505,7 @@
 				CF58E7AD1BF6FA05000D47C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF58E7AE1BF6FA05000D47C9 /* Build configuration list for PBXNativeTarget "02-按钮操作Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				CF58E7B01BF6FA05000D47C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF58E7B11BF6FA05000D47C9 /* Build configuration list for PBXNativeTarget "02-按钮操作UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				CF58E7B31BF6FA05000D47C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

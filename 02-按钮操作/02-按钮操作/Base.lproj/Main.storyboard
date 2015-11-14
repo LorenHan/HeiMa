@@ -21,41 +21,65 @@
                                 <rect key="frame" x="60" y="320" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="top_normal.png"/>
+                                <connections>
+                                    <action selector="iconMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6N-bT-WUY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zd-Qm-Pxw">
                                 <rect key="frame" x="20" y="370" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="left_normal.png"/>
+                                <connections>
+                                    <action selector="iconMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nmb-G2-nI4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iia-IK-LRA">
                                 <rect key="frame" x="60" y="407" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="bottom_normal.png"/>
+                                <connections>
+                                    <action selector="iconMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRL-6h-WgA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snO-cB-eOd">
                                 <rect key="frame" x="180" y="320" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="plus_normal.png"/>
+                                <connections>
+                                    <action selector="zoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sD-eK-cVZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-zg-rKk">
                                 <rect key="frame" x="246" y="320" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="minus_normal.png"/>
+                                <connections>
+                                    <action selector="zoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkv-IX-n4g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-wd-zUV">
                                 <rect key="frame" x="180" y="407" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="left_rotate_normal.png"/>
+                                <connections>
+                                    <action selector="rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rmt-mX-kzv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4v-IH-24C">
                                 <rect key="frame" x="246" y="407" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="right_rotate_normal.png"/>
+                                <connections>
+                                    <action selector="rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1n9-Zs-2Li"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlD-nT-FOF">
                                 <rect key="frame" x="99" y="370" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="right_highlighted.png"/>
+                                <connections>
+                                    <action selector="iconMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7I-fH-4Sa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
