@@ -29,6 +29,7 @@
     //3.show sum in label
     self.result.text = [NSString stringWithFormat:@"%d",sum];
     
+    
     //close keyboard
     //method 1
     //[self.num1 resignFirstResponder];
