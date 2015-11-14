@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9e-eq-pqO">
+                                <rect key="frame" x="50" y="304" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="top_normal"/>
+                                <state key="highlighted" image="top_highlighted.png"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a5-eG-d3W">
+                                <rect key="frame" x="10" y="348" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="left_normal"/>
+                                <state key="highlighted" image="left_highlighted.png"/>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rom-Lv-Kgg">
+                                <rect key="frame" x="93" y="348" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="right_highlighted"/>
+                                <state key="highlighted" image="right_highlighted.png"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-TB-2Qg">
+                                <rect key="frame" x="184" y="304" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="plus_normal"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSF-g9-0Ul">
+                                <rect key="frame" x="50" y="388" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="bottom_normal"/>
+                                <state key="highlighted" image="bottom_highlighted.png"/>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjO-nV-anN">
+                                <rect key="frame" x="260" y="304" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="minus_normal.png"/>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atd-cF-1by">
+                                <rect key="frame" x="184" y="388" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="left_rotate_normal.png"/>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzP-6o-HGM">
+                                <rect key="frame" x="260" y="388" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="right_rotate_normal.png"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="iconBotton" destination="atd-cF-1by" id="htR-hX-Uzm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="374"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom_highlighted.png" width="96" height="96"/>
+        <image name="bottom_normal" width="96" height="96"/>
+        <image name="left_highlighted.png" width="96" height="96"/>
+        <image name="left_normal" width="96" height="96"/>
+        <image name="left_rotate_normal.png" width="96" height="96"/>
+        <image name="minus_normal.png" width="96" height="96"/>
+        <image name="plus_normal" width="96" height="96"/>
+        <image name="right_highlighted" width="96" height="96"/>
+        <image name="right_highlighted.png" width="96" height="96"/>
+        <image name="right_rotate_normal.png" width="96" height="96"/>
+        <image name="top_highlighted.png" width="96" height="96"/>
+        <image name="top_normal" width="96" height="96"/>
+    </resources>
+</document>

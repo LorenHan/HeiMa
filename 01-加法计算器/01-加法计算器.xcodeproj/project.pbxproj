@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFC49AC01BF35CC600F002F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC49ABF1BF35CC600F002F1 /* main.m */; };
+		CFC49AC31BF35CC600F002F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC49AC21BF35CC600F002F1 /* AppDelegate.m */; };
+		CFC49AC61BF35CC600F002F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC49AC51BF35CC600F002F1 /* ViewController.m */; };
+		CFC49AC91BF35CC600F002F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC49AC71BF35CC600F002F1 /* Main.storyboard */; };
+		CFC49ACB1BF35CC600F002F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC49ACA1BF35CC600F002F1 /* Assets.xcassets */; };
+		CFC49ACE1BF35CC600F002F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC49ACC1BF35CC600F002F1 /* LaunchScreen.storyboard */; };
+		CFC49AD91BF35CC600F002F1 /* _1______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC49AD81BF35CC600F002F1 /* _1______Tests.m */; };
+		CFC49AE41BF35CC600F002F1 /* _1______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC49AE31BF35CC600F002F1 /* _1______UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFC49AD51BF35CC600F002F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC49AB31BF35CC600F002F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC49ABA1BF35CC600F002F1;
+			remoteInfo = "01-加法计算器";
+		};
+		CFC49AE01BF35CC600F002F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC49AB31BF35CC600F002F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC49ABA1BF35CC600F002F1;
+			remoteInfo = "01-加法计算器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFC49ABB1BF35CC600F002F1 /* 01-加法计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-加法计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC49ABF1BF35CC600F002F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFC49AC11BF35CC600F002F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFC49AC21BF35CC600F002F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFC49AC41BF35CC600F002F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFC49AC51BF35CC600F002F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFC49AC81BF35CC600F002F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFC49ACA1BF35CC600F002F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFC49ACD1BF35CC600F002F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFC49ACF1BF35CC600F002F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC49AD41BF35CC600F002F1 /* 01-加法计算器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-加法计算器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC49AD81BF35CC600F002F1 /* _1______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1______Tests.m"; sourceTree = "<group>"; };
+		CFC49ADA1BF35CC600F002F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC49ADF1BF35CC600F002F1 /* 01-加法计算器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-加法计算器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC49AE31BF35CC600F002F1 /* _1______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1______UITests.m"; sourceTree = "<group>"; };
+		CFC49AE51BF35CC600F002F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC49AB81BF35CC600F002F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49AD11BF35CC600F002F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49ADC1BF35CC600F002F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFC49AB21BF35CC600F002F1 = {
+			isa = PBXGroup;
+			children = (
+				CFC49ABD1BF35CC600F002F1 /* 01-加法计算器 */,
+				CFC49AD71BF35CC600F002F1 /* 01-加法计算器Tests */,
+				CFC49AE21BF35CC600F002F1 /* 01-加法计算器UITests */,
+				CFC49ABC1BF35CC600F002F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC49ABC1BF35CC600F002F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC49ABB1BF35CC600F002F1 /* 01-加法计算器.app */,
+				CFC49AD41BF35CC600F002F1 /* 01-加法计算器Tests.xctest */,
+				CFC49ADF1BF35CC600F002F1 /* 01-加法计算器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC49ABD1BF35CC600F002F1 /* 01-加法计算器 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC49AC11BF35CC600F002F1 /* AppDelegate.h */,
+				CFC49AC21BF35CC600F002F1 /* AppDelegate.m */,
+				CFC49AC41BF35CC600F002F1 /* ViewController.h */,
+				CFC49AC51BF35CC600F002F1 /* ViewController.m */,
+				CFC49AC71BF35CC600F002F1 /* Main.storyboard */,
+				CFC49ACA1BF35CC600F002F1 /* Assets.xcassets */,
+				CFC49ACC1BF35CC600F002F1 /* LaunchScreen.storyboard */,
+				CFC49ACF1BF35CC600F002F1 /* Info.plist */,
+				CFC49ABE1BF35CC600F002F1 /* Supporting Files */,
+			);
+			path = "01-加法计算器";
+			sourceTree = "<group>";
+		};
+		CFC49ABE1BF35CC600F002F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFC49ABF1BF35CC600F002F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFC49AD71BF35CC600F002F1 /* 01-加法计算器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC49AD81BF35CC600F002F1 /* _1______Tests.m */,
+				CFC49ADA1BF35CC600F002F1 /* Info.plist */,
+			);
+			path = "01-加法计算器Tests";
+			sourceTree = "<group>";
+		};
+		CFC49AE21BF35CC600F002F1 /* 01-加法计算器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC49AE31BF35CC600F002F1 /* _1______UITests.m */,
+				CFC49AE51BF35CC600F002F1 /* Info.plist */,
+			);
+			path = "01-加法计算器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC49ABA1BF35CC600F002F1 /* 01-加法计算器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC49AE81BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器" */;
+			buildPhases = (
+				CFC49AB71BF35CC600F002F1 /* Sources */,
+				CFC49AB81BF35CC600F002F1 /* Frameworks */,
+				CFC49AB91BF35CC600F002F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-加法计算器";
+			productName = "01-加法计算器";
+			productReference = CFC49ABB1BF35CC600F002F1 /* 01-加法计算器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFC49AD31BF35CC600F002F1 /* 01-加法计算器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC49AEB1BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器Tests" */;
+			buildPhases = (
+				CFC49AD01BF35CC600F002F1 /* Sources */,
+				CFC49AD11BF35CC600F002F1 /* Frameworks */,
+				CFC49AD21BF35CC600F002F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC49AD61BF35CC600F002F1 /* PBXTargetDependency */,
+			);
+			name = "01-加法计算器Tests";
+			productName = "01-加法计算器Tests";
+			productReference = CFC49AD41BF35CC600F002F1 /* 01-加法计算器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFC49ADE1BF35CC600F002F1 /* 01-加法计算器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC49AEE1BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器UITests" */;
+			buildPhases = (
+				CFC49ADB1BF35CC600F002F1 /* Sources */,
+				CFC49ADC1BF35CC600F002F1 /* Frameworks */,
+				CFC49ADD1BF35CC600F002F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC49AE11BF35CC600F002F1 /* PBXTargetDependency */,
+			);
+			name = "01-加法计算器UITests";
+			productName = "01-加法计算器UITests";
+			productReference = CFC49ADF1BF35CC600F002F1 /* 01-加法计算器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC49AB31BF35CC600F002F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "韩 晓剑";
+				TargetAttributes = {
+					CFC49ABA1BF35CC600F002F1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = BB33V7ZM23;
+					};
+					CFC49AD31BF35CC600F002F1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = BB33V7ZM23;
+						TestTargetID = CFC49ABA1BF35CC600F002F1;
+					};
+					CFC49ADE1BF35CC600F002F1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = BB33V7ZM23;
+						TestTargetID = CFC49ABA1BF35CC600F002F1;
+					};
+				};
+			};
+			buildConfigurationList = CFC49AB61BF35CC600F002F1 /* Build configuration list for PBXProject "01-加法计算器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC49AB21BF35CC600F002F1;
+			productRefGroup = CFC49ABC1BF35CC600F002F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC49ABA1BF35CC600F002F1 /* 01-加法计算器 */,
+				CFC49AD31BF35CC600F002F1 /* 01-加法计算器Tests */,
+				CFC49ADE1BF35CC600F002F1 /* 01-加法计算器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC49AB91BF35CC600F002F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC49ACE1BF35CC600F002F1 /* LaunchScreen.storyboard in Resources */,
+				CFC49ACB1BF35CC600F002F1 /* Assets.xcassets in Resources */,
+				CFC49AC91BF35CC600F002F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49AD21BF35CC600F002F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49ADD1BF35CC600F002F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC49AB71BF35CC600F002F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC49AC61BF35CC600F002F1 /* ViewController.m in Sources */,
+				CFC49AC31BF35CC600F002F1 /* AppDelegate.m in Sources */,
+				CFC49AC01BF35CC600F002F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49AD01BF35CC600F002F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC49AD91BF35CC600F002F1 /* _1______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC49ADB1BF35CC600F002F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC49AE41BF35CC600F002F1 /* _1______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFC49AD61BF35CC600F002F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC49ABA1BF35CC600F002F1 /* 01-加法计算器 */;
+			targetProxy = CFC49AD51BF35CC600F002F1 /* PBXContainerItemProxy */;
+		};
+		CFC49AE11BF35CC600F002F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC49ABA1BF35CC600F002F1 /* 01-加法计算器 */;
+			targetProxy = CFC49AE01BF35CC600F002F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFC49AC71BF35CC600F002F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC49AC81BF35CC600F002F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFC49ACC1BF35CC600F002F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC49ACD1BF35CC600F002F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFC49AE61BF35CC600F002F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFC49AE71BF35CC600F002F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC49AE91BF35CC600F002F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-加法计算器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFC49AEA1BF35CC600F002F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-加法计算器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFC49AEC1BF35CC600F002F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "01-加法计算器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-加法计算器.app/01-加法计算器";
+			};
+			name = Debug;
+		};
+		CFC49AED1BF35CC600F002F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "01-加法计算器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/01-加法计算器.app/01-加法计算器";
+			};
+			name = Release;
+		};
+		CFC49AEF1BF35CC600F002F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "01-加法计算器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "01-加法计算器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CFC49AF01BF35CC600F002F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "01-加法计算器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lorenhan-163.com.-1------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "01-加法计算器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC49AB61BF35CC600F002F1 /* Build configuration list for PBXProject "01-加法计算器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC49AE61BF35CC600F002F1 /* Debug */,
+				CFC49AE71BF35CC600F002F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC49AE81BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC49AE91BF35CC600F002F1 /* Debug */,
+				CFC49AEA1BF35CC600F002F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFC49AEB1BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC49AEC1BF35CC600F002F1 /* Debug */,
+				CFC49AED1BF35CC600F002F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFC49AEE1BF35CC600F002F1 /* Build configuration list for PBXNativeTarget "01-加法计算器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC49AEF1BF35CC600F002F1 /* Debug */,
+				CFC49AF01BF35CC600F002F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFC49AB31BF35CC600F002F1 /* Project object */;
+}
