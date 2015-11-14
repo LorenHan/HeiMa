@@ -35,7 +35,7 @@ enum{
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     
     //设置图片背景
-    [btn setBackgroundImage:[UIImage imageNamed:@"btn01.png"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"left_disable.png"] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:@"btn02.png"] forState:UIControlStateHighlighted];
     
     //设置背景颜色
