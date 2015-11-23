@@ -92,7 +92,7 @@
     self.descLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.descLabel];
     
-    //滑动按钮
+    //滑动按钮 
     
     //夜间模式
     
