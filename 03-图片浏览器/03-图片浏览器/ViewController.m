@@ -27,6 +27,8 @@
 @property (nonatomic,strong) UISwitch    *iconSwitch;
 @property (nonatomic,assign) NSInteger   imageIndex;//图片索引
 @property (nonatomic,strong) NSArray     *imageList;//图片信息表
+
+
 @end
 
 @implementation ViewController
@@ -39,33 +41,28 @@
  *  懒加载（延迟加载），通过getter方法实现
  *  效果：让对象在最需要的时候创建
  */
-//- (NSArray *)imageList{
-//    NSLog(@"读取图像信息");
-//    if (nil == _imageList) {
-//        NSLog(@"实例化数组");
-//        
-//        // "包" Bundle [NSBundle mainBundle]编译安装之后对应的程序包
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"];
-//        NSLog(@"%@",path);
-//        
-//    }
-//    return _imageList;
-//}
+- (NSArray *)imageList{
+    NSLog(@"读取图像信息");
+    if (nil == _imageList) {
+        NSLog(@"实例化数组");
+        //设置字典
+        NSDictionary *dict1 = @{@"name":@"biaoqingdi",@"desc":@"表情"};
+        NSDictionary *dict2 = @{@"name":@"bingli",@"desc":@"病历"};
+        NSDictionary *dict3 = @{@"name":@"chiniupa",@"desc":@"吃牛扒"};
+        NSDictionary *dict4 = @{@"name":@"danteng",@"desc":@"蛋疼"};
+        NSDictionary *dict5 = @{@"name":@"wangba",@"desc":@"网吧"};
+        _imageList = @[dict1,dict2,dict3,dict4,dict5];
+    }
+    return _imageList;
+}
 
 - (void)showPhotoInfo{
-    //设置序号
     self.noLabel.text = [NSString stringWithFormat:@"%ld/%d",self.imageIndex + 1,5];
     
-    NSDictionary *dict1 = @{@"name":@"biaoqingdi",@"desc":@"表情"};
-    NSDictionary *dict2 = @{@"name":@"bingli",@"desc":@"病历"};
-    NSDictionary *dict3 = @{@"name":@"chiniupa",@"desc":@"吃牛扒"};
-    NSDictionary *dict4 = @{@"name":@"danteng",@"desc":@"蛋疼"};
-    NSDictionary *dict5 = @{@"name":@"wangba",@"desc":@"网吧"};
-    
-    NSArray *array = @[dict1,dict2,dict3,dict4,dict5];
     //设置图像和描述
-    self.iconImage.image = [UIImage imageNamed:array[self.imageIndex][@"name"]];
-    self.descLabel.text  = array[self.imageIndex][@"desc"];
+    //不可以用 _imageList，因为要调用getter方法。
+    self.iconImage.image = [UIImage imageNamed:self.imageList[self.imageIndex][@"name"]];
+    self.descLabel.text  = self.imageList[self.imageIndex][@"desc"];
 }
 
 
