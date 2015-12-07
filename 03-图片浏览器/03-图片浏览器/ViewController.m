@@ -18,27 +18,57 @@
 **/
 @interface ViewController ()
 
-@property (nonatomic,strong) UILabel *noLabel;   //显示顶部图片号
-@property (nonatomic,strong) UILabel *descLabel;
+@property (nonatomic,strong) UILabel     *noLabel;//显示顶部图片号
+@property (nonatomic,strong) UILabel     *descLabel;//显示底部描述
 @property (nonatomic,strong) UIImageView *iconImage;
-@property (nonatomic,strong) UIButton *leftButton;
-@property (nonatomic,strong) UIButton *rightButton;
-@property (nonatomic,strong) UISlider *iconSlider;
-@property (nonatomic,strong) UISwitch *iconSwitch;
-
-
-/*图片索引*/
-@property (nonatomic,assign) NSInteger imageIndex;
-/*图片信息表*/
-@property (nonatomic,strong) NSArray *imageList;
+@property (nonatomic,strong) UIButton    *leftButton;
+@property (nonatomic,strong) UIButton    *rightButton;
+@property (nonatomic,strong) UISlider    *iconSlider;
+@property (nonatomic,strong) UISwitch    *iconSwitch;
+@property (nonatomic,assign) NSInteger   imageIndex;//图片索引
+@property (nonatomic,strong) NSArray     *imageList;//图片信息表
 @end
 
 @implementation ViewController
 
-- (NSArray *)imageList{
+//- (NSArray *)imageList{
+//    return _imageList;
+//}
+
+/**
+ *  懒加载（延迟加载），通过getter方法实现
+ *  效果：让对象在最需要的时候创建
+ */
+//- (NSArray *)imageList{
+//    NSLog(@"读取图像信息");
+//    if (nil == _imageList) {
+//        NSLog(@"实例化数组");
+//        
+//        // "包" Bundle [NSBundle mainBundle]编译安装之后对应的程序包
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"];
+//        NSLog(@"%@",path);
+//        
+//    }
+//    return _imageList;
+//}
+
+- (void)showPhotoInfo{
+    //设置序号
+    self.noLabel.text = [NSString stringWithFormat:@"%ld/%d",self.imageIndex + 1,5];
     
-    return _imageList;
+    NSDictionary *dict1 = @{@"name":@"biaoqingdi",@"desc":@"表情"};
+    NSDictionary *dict2 = @{@"name":@"bingli",@"desc":@"病历"};
+    NSDictionary *dict3 = @{@"name":@"chiniupa",@"desc":@"吃牛扒"};
+    NSDictionary *dict4 = @{@"name":@"danteng",@"desc":@"蛋疼"};
+    NSDictionary *dict5 = @{@"name":@"wangba",@"desc":@"网吧"};
+    
+    NSArray *array = @[dict1,dict2,dict3,dict4,dict5];
+    //设置图像和描述
+    self.iconImage.image = [UIImage imageNamed:array[self.imageIndex][@"name"]];
+    self.descLabel.text  = array[self.imageIndex][@"desc"];
 }
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,7 +79,7 @@
     self.noLabel.text = @"1/5";
     self.noLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.noLabel];
-    
+
     //图像显示
     CGFloat imageW = self.view.bounds.size.width - 120;
     CGFloat imageH = imageW + 20;
@@ -62,11 +92,11 @@
     [self.view addSubview:self.iconImage];
     
     //左右箭头
-    CGFloat arrowW = 40;
-    CGFloat arrowH = 40;
-    CGFloat arrowLeftButtonX = 10;
-    CGFloat arrowRightButtonX  = 70 + imageW;
-    CGFloat arrowY = imageH * 0.5 + CGRectGetMaxY(self.noLabel.frame);
+    CGFloat arrowW            = 40;
+    CGFloat arrowH            = 40;
+    CGFloat arrowLeftButtonX  = 10;
+    CGFloat arrowRightButtonX = 70 + imageW;
+    CGFloat arrowY            = imageH * 0.5 + CGRectGetMaxY(self.noLabel.frame);
     
     self.leftButton = [[UIButton alloc] initWithFrame:CGRectMake(arrowLeftButtonX, arrowY,arrowW , arrowH)];
     //self.leftButton.backgroundColor = [UIColor greenColor];
@@ -81,6 +111,8 @@
     [self.rightButton setBackgroundImage:[UIImage imageNamed:@"right_highlighted.png"] forState:UIControlStateHighlighted];
     [self.view addSubview:self.rightButton];
     
+    [self.rightButton addTarget:self action:@selector(nextPhoto) forControlEvents:UIControlEventTouchUpInside];
+    
     //下面的标题栏
     CGFloat descLabelX = 60 + imageW * 0.125;
     CGFloat descLabelY = 5 + CGRectGetMaxY(self.iconImage.frame);
@@ -91,11 +123,19 @@
     //self.descLabel.backgroundColor = [UIColor yellowColor];
     self.descLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.descLabel];
-    
-    //滑动按钮 
+   
+    //滑动按钮
     
     //夜间模式
     
+}
+
+
+
+- (void)nextPhoto{
+    NSLog(@"%s,%s,%d,%s",__FILE__,__func__,__LINE__,__FUNCTION__);
+    self.imageIndex++;
+    [self showPhotoInfo];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -104,9 +144,6 @@
 }
 
 @end
-
-
-
 
 
 
