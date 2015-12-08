@@ -45,13 +45,21 @@
     NSLog(@"读取图像信息");
     if (nil == _imageList) {
         NSLog(@"实例化数组");
-        //设置字典
-        NSDictionary *dict1 = @{@"name":@"biaoqingdi",@"desc":@"表情"};
-        NSDictionary *dict2 = @{@"name":@"bingli",@"desc":@"病历"};
-        NSDictionary *dict3 = @{@"name":@"chiniupa",@"desc":@"吃牛扒"};
-        NSDictionary *dict4 = @{@"name":@"danteng",@"desc":@"蛋疼"};
-        NSDictionary *dict5 = @{@"name":@"wangba",@"desc":@"网吧"};
-        _imageList = @[dict1,dict2,dict3,dict4,dict5];
+        
+        //"包" Bundle [NSBundle mainBundle] 编译安装后的对应程序包
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"];
+        NSLog(@"%@",path);
+        
+        //OC中ContentsOfFile需要完整路径
+        _imageList = [NSArray arrayWithContentsOfFile:path];
+        NSLog(@"%@",_imageList);
+//        //设置字典
+//        NSDictionary *dict1 = @{@"name":@"biaoqingdi",@"desc":@"表情"};
+//        NSDictionary *dict2 = @{@"name":@"bingli",@"desc":@"病历"};
+//        NSDictionary *dict3 = @{@"name":@"chiniupa",@"desc":@"吃牛扒"};
+//        NSDictionary *dict4 = @{@"name":@"danteng",@"desc":@"蛋疼"};
+//        NSDictionary *dict5 = @{@"name":@"wangba",@"desc":@"网吧"};
+//        _imageList = @[dict1,dict2,dict3,dict4,dict5];
     }
     return _imageList;
 }
@@ -114,13 +122,15 @@
     CGFloat descLabelX = 60 + imageW * 0.125;
     CGFloat descLabelY = 5 + CGRectGetMaxY(self.iconImage.frame);
     CGFloat descLabelW = imageW * 0.75;
-    CGFloat descLabelH = 40;
+    CGFloat descLabelH = 200;
     self.descLabel = [[UILabel alloc] initWithFrame:CGRectMake(descLabelX, descLabelY, descLabelW, descLabelH)];
-    self.descLabel.text = @"神马表情";
+    //self.descLabel.text = @"神马表情";
     //self.descLabel.backgroundColor = [UIColor yellowColor];
+    //在有足够高度的前提下，不限制显示的行数。
+    _descLabel.numberOfLines = 0;
     self.descLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.descLabel];
-   
+    [self showPhotoInfo];
     //滑动按钮
     
     //夜间模式
