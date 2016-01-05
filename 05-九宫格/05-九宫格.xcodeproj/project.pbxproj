@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0593CE1C3A133A00B71D4E /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0593CD1C3A133A00B71D4E /* AppInfo.m */; };
+		CFC28C6A1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
+		CFC28C6B1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
+		CFC28C6C1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
 		CFFE28661C375E6D006568C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE28651C375E6D006568C0 /* main.m */; };
 		CFFE28691C375E6D006568C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE28681C375E6D006568C0 /* AppDelegate.m */; };
 		CFFE286C1C375E6D006568C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE286B1C375E6D006568C0 /* ViewController.m */; };
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0593CC1C3A133A00B71D4E /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = ../AppInfo.h; sourceTree = "<group>"; };
+		CF0593CD1C3A133A00B71D4E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfo.m; path = ../AppInfo.m; sourceTree = "<group>"; };
+		CFC28C691C38E97400395F08 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
 		CFFE28611C375E6D006568C0 /* 05-九宫格.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-九宫格.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFE28651C375E6D006568C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFFE28671C375E6D006568C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +112,8 @@
 				CFFE28681C375E6D006568C0 /* AppDelegate.m */,
 				CFFE286A1C375E6D006568C0 /* ViewController.h */,
 				CFFE286B1C375E6D006568C0 /* ViewController.m */,
+				CF0593CC1C3A133A00B71D4E /* AppInfo.h */,
+				CF0593CD1C3A133A00B71D4E /* AppInfo.m */,
 				CFFE286D1C375E6D006568C0 /* Main.storyboard */,
 				CFFE28701C375E6D006568C0 /* Assets.xcassets */,
 				CFFE28721C375E6D006568C0 /* LaunchScreen.storyboard */,
@@ -117,6 +126,7 @@
 		CFFE28641C375E6D006568C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFC28C691C38E97400395F08 /* app.plist */,
 				CFFE28651C375E6D006568C0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC28C6A1C38E97400395F08 /* app.plist in Resources */,
 				CFFE28741C375E6D006568C0 /* LaunchScreen.storyboard in Resources */,
 				CFFE28711C375E6D006568C0 /* Assets.xcassets in Resources */,
 				CFFE286F1C375E6D006568C0 /* Main.storyboard in Resources */,
@@ -256,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC28C6B1C38E97400395F08 /* app.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC28C6C1C38E97400395F08 /* app.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFE286C1C375E6D006568C0 /* ViewController.m in Sources */,
+				CF0593CE1C3A133A00B71D4E /* AppInfo.m in Sources */,
 				CFFE28691C375E6D006568C0 /* AppDelegate.m in Sources */,
 				CFFE28661C375E6D006568C0 /* main.m in Sources */,
 			);
@@ -501,6 +515,7 @@
 				CFFE28901C375E6D006568C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFFE28911C375E6D006568C0 /* Build configuration list for PBXNativeTarget "05-九宫格Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +524,7 @@
 				CFFE28931C375E6D006568C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFFE28941C375E6D006568C0 /* Build configuration list for PBXNativeTarget "05-九宫格UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				CFFE28961C375E6D006568C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
