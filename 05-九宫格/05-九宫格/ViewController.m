@@ -33,6 +33,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //Xib测试代码
+    //加载Xib，Xib中可以包含多个自定义视图，通常只保存一个
+    //NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil];
+//    UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+    
+    
     //x轴间隔 列间隔
     CGFloat marginX = (self.view.bounds.size.width - kAppViewW * kColCount) / (kColCount + 1);
     //y轴间隔 行间隔
@@ -46,41 +53,44 @@
         CGFloat x = marginX + col * (marginX + kAppViewW);
         CGFloat y = kStartY + row * (marginY + kAppViewH);
         
-        UIView *appView = [[UIView alloc] initWithFrame:CGRectMake(x, y, kAppViewW, kAppViewH)];
-
+//        UIView *appView = [[UIView alloc] initWithFrame:CGRectMake(x, y, kAppViewW, kAppViewH)];
+        UIView *appView = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+        appView.frame = CGRectMake(x, y, kAppViewW, kAppViewH);
         [self.view addSubview:appView];
         
         //实现内部细节
         
         AppInfo *appInfo = self.appList[i];
         //1> UIImageView 照片
-        UIImageView *icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kAppViewW, 50)];
+//        UIImageView *icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kAppViewW, 50)];
+        UIImageView *icon = appView.subviews[0];
         //设置图像
         icon.image = [UIImage imageNamed:appInfo.icon];
         //icon.image = [UIImage imageNamed:@"icon_00"];
         //设置图像填充模式，等比例显示  Ctrl+6 代码索引快捷键
-        icon.contentMode = UIViewContentModeScaleAspectFit;
+//        icon.contentMode = UIViewContentModeScaleAspectFit;
         
-        [appView addSubview:icon];
+//        [appView addSubview:icon];
         
         //2> UILabel     应用名称
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(icon.frame), kAppViewW, 20)];
+//        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(icon.frame), kAppViewW, 20)];
+        UILabel *label = appView.subviews[1];
         label.text = appInfo.name;
         //设置字体
-        label.font = [UIFont systemFontOfSize:13.0];
+//        label.font = [UIFont systemFontOfSize:13.0];
         //设置字居中
-        label.textAlignment = NSTextAlignmentCenter;
+//        label.textAlignment = NSTextAlignmentCenter;
         
-        [appView addSubview:label];
+//        [appView addSubview:label];
         
         //3> UIButton    下载按钮
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(label.frame), kAppViewW, 20)];
-        
+//        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(label.frame), kAppViewW, 20)];
+        UIButton *button = appView.subviews[2];
         //背景图片
-        [button setBackgroundImage:[UIImage imageNamed:@"buttongreen"] forState:UIControlStateNormal];
-        [button setBackgroundImage:[UIImage imageNamed:@"buttongreen_highlighted"] forState:UIControlStateHighlighted];
+//        [button setBackgroundImage:[UIImage imageNamed:@"buttongreen"] forState:UIControlStateNormal];
+//        [button setBackgroundImage:[UIImage imageNamed:@"buttongreen_highlighted"] forState:UIControlStateHighlighted];
         //显示文字  需要注意的是设置字的时候也需要normal或者highlighted模式
-        [button setTitle:@"下载" forState:UIControlStateNormal];
+//        [button setTitle:@"下载" forState:UIControlStateNormal];
         //[button setTitle:@"下载" forState:UIControlStateHighlighted];
         
         //给按钮添加监听方法

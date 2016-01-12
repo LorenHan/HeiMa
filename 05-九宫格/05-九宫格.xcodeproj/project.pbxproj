@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF0593CE1C3A133A00B71D4E /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0593CD1C3A133A00B71D4E /* AppInfo.m */; };
+		CF54FABF1C45186B005109A6 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF54FABE1C45186B005109A6 /* AppView.xib */; };
 		CFC28C6A1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
 		CFC28C6B1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
 		CFC28C6C1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
@@ -41,13 +42,14 @@
 /* Begin PBXFileReference section */
 		CF0593CC1C3A133A00B71D4E /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = ../AppInfo.h; sourceTree = "<group>"; };
 		CF0593CD1C3A133A00B71D4E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfo.m; path = ../AppInfo.m; sourceTree = "<group>"; };
+		CF54FABE1C45186B005109A6 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppView.xib; sourceTree = "<group>"; };
 		CFC28C691C38E97400395F08 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
 		CFFE28611C375E6D006568C0 /* 05-九宫格.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-九宫格.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFE28651C375E6D006568C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFFE28671C375E6D006568C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFFE28681C375E6D006568C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFFE286A1C375E6D006568C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CFFE286B1C375E6D006568C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFFE286B1C375E6D006568C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		CFFE286E1C375E6D006568C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFFE28701C375E6D006568C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFFE28731C375E6D006568C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				CFFE28681C375E6D006568C0 /* AppDelegate.m */,
 				CFFE286A1C375E6D006568C0 /* ViewController.h */,
 				CFFE286B1C375E6D006568C0 /* ViewController.m */,
+				CF54FABE1C45186B005109A6 /* AppView.xib */,
 				CF0593CC1C3A133A00B71D4E /* AppInfo.h */,
 				CF0593CD1C3A133A00B71D4E /* AppInfo.m */,
 				CFFE286D1C375E6D006568C0 /* Main.storyboard */,
@@ -259,6 +262,7 @@
 				CFC28C6A1C38E97400395F08 /* app.plist in Resources */,
 				CFFE28741C375E6D006568C0 /* LaunchScreen.storyboard in Resources */,
 				CFFE28711C375E6D006568C0 /* Assets.xcassets in Resources */,
+				CF54FABF1C45186B005109A6 /* AppView.xib in Resources */,
 				CFFE286F1C375E6D006568C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
