@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppInfo.h"
+#import "AppView.h"
 
 #define kAppViewW 80
 #define kAppViewH 90
@@ -47,29 +48,27 @@
         CGFloat x = marginX + col * (marginX + kAppViewW);
         CGFloat y = kStartY + row * (marginY + kAppViewH);
         
-        UIView *appView = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+        AppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
         appView.frame = CGRectMake(x, y, kAppViewW, kAppViewH);
+        
         [self.view addSubview:appView];
         
         //实现内部细节
         
         AppInfo *appInfo = self.appList[i];
         //1> UIImageView 照片
-        UIImageView *icon = appView.subviews[0];
         //设置图像
-        icon.image = [UIImage imageNamed:appInfo.icon];
+        appView.icon.image = [UIImage imageNamed:appInfo.icon];
         
         //2> UILabel     应用名称
-        UILabel *label = appView.subviews[1];
-        label.text = appInfo.name;
+        appView.label.text = appInfo.name;
         
         //3> UIButton    下载按钮
-        UIButton *button = appView.subviews[2];
         //给按钮添加监听方法
-        button.tag = i;
+        appView.button.tag = i;
         
-        [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
-        [appView addSubview:button];
+        [appView.button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+        [appView addSubview:appView.button];
     }
 }
 

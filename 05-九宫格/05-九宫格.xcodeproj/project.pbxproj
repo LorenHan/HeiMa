@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF0593CE1C3A133A00B71D4E /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0593CD1C3A133A00B71D4E /* AppInfo.m */; };
 		CF54FABF1C45186B005109A6 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF54FABE1C45186B005109A6 /* AppView.xib */; };
+		CF54FAC51C45338A005109A6 /* AppView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAC41C45338A005109A6 /* AppView.m */; };
 		CFC28C6A1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
 		CFC28C6B1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
 		CFC28C6C1C38E97400395F08 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC28C691C38E97400395F08 /* app.plist */; };
@@ -43,6 +44,8 @@
 		CF0593CC1C3A133A00B71D4E /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = ../AppInfo.h; sourceTree = "<group>"; };
 		CF0593CD1C3A133A00B71D4E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfo.m; path = ../AppInfo.m; sourceTree = "<group>"; };
 		CF54FABE1C45186B005109A6 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppView.xib; sourceTree = "<group>"; };
+		CF54FAC31C45338A005109A6 /* AppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppView.h; sourceTree = "<group>"; };
+		CF54FAC41C45338A005109A6 /* AppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppView.m; sourceTree = "<group>"; };
 		CFC28C691C38E97400395F08 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
 		CFFE28611C375E6D006568C0 /* 05-九宫格.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-九宫格.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFE28651C375E6D006568C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				CFFE28681C375E6D006568C0 /* AppDelegate.m */,
 				CFFE286A1C375E6D006568C0 /* ViewController.h */,
 				CFFE286B1C375E6D006568C0 /* ViewController.m */,
+				CF54FAC31C45338A005109A6 /* AppView.h */,
+				CF54FAC41C45338A005109A6 /* AppView.m */,
 				CF54FABE1C45186B005109A6 /* AppView.xib */,
 				CF0593CC1C3A133A00B71D4E /* AppInfo.h */,
 				CF0593CD1C3A133A00B71D4E /* AppInfo.m */,
@@ -292,6 +297,7 @@
 			files = (
 				CFFE286C1C375E6D006568C0 /* ViewController.m in Sources */,
 				CF0593CE1C3A133A00B71D4E /* AppInfo.m in Sources */,
+				CF54FAC51C45338A005109A6 /* AppView.m in Sources */,
 				CFFE28691C375E6D006568C0 /* AppDelegate.m in Sources */,
 				CFFE28661C375E6D006568C0 /* main.m in Sources */,
 			);
