@@ -41,7 +41,8 @@
  
  readonly的属性不会生成带下划线的成员变量！
  */
-//@property (nonatomic, strong) UIImage *image;
+
+//@property (nonatomic, strong, readonly) UIImage *image;
 /**
  *  返回所有plist中的所有模型数组
  */

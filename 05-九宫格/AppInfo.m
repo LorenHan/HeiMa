@@ -19,7 +19,9 @@
  2> 模型中的属性可以不全部出现在plist中
  */
 //- (UIImage *)image{
-//
+//    if (_image = nil) {
+//        <#statements#>
+//    }
 //}
 
 /** 使用字典实例化模型 */

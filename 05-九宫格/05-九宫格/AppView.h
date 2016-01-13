@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AppInfo;
 
 @interface AppView : UIView
 
-@property (weak, nonatomic) IBOutlet UIImageView *icon;
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UIButton *button;
+//自定义视图中显示的数据来源是数据模型
+//使用模型来设置自定义视图的显示
+@property (strong,nonatomic) AppInfo *appInfo;
 
 @end

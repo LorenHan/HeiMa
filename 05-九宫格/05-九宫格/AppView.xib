@@ -21,6 +21,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="下载" backgroundImage="buttongreen"/>
                     <state key="highlighted" backgroundImage="buttongreen_highlighted"/>
+                    <connections>
+                        <action selector="click:" destination="AIC-R6-yot" eventType="touchUpInside" id="M17-vZ-nnp"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-SB-fvo">
                     <rect key="frame" x="0.0" y="50" width="80" height="20"/>
@@ -34,7 +37,6 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="button" destination="Cn0-xl-NVe" id="ePf-sy-x3g"/>
                 <outlet property="icon" destination="wwP-bp-lpa" id="pj6-zt-qMB"/>
                 <outlet property="label" destination="BOg-SB-fvo" id="X6L-as-JWQ"/>
             </connections>
