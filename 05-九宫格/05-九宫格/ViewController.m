@@ -48,12 +48,15 @@
         CGFloat x = marginX + col * (marginX + kAppViewW);
         CGFloat y = kStartY + row * (marginY + kAppViewH);
         
-        AppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+        //AppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+        //AppView *appView = [AppView appView];
+        AppView *appView = [AppView appViewWithAppInfo:self.appList[i]];
+        
         appView.frame = CGRectMake(x, y, kAppViewW, kAppViewH);
         
         [self.view addSubview:appView];
         //调用appInfo方法，在setter中设置label和imageView图像
-        appView.appInfo = self.appList[i];
+        //appView.appInfo = self.appList[i];
 
     }
 }

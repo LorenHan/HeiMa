@@ -19,8 +19,20 @@
 
 @implementation AppView
 
++(instancetype)appView{
+    return [[[NSBundle mainBundle] loadNibNamed:@"AppView" owner:nil options:nil] lastObject];
+}
+
++(instancetype)appViewWithAppInfo:(AppInfo *)appInfo {
+    //1.实例化一个试图
+    AppView *view = [self appView];
+    //2.设置视图的显示
+    view.appInfo = appInfo;
+    //3.返回视图
+    return view;
+}
 //利用setter方法设置视图界面的显示
-- (void)setAppInfo:(AppInfo *)appInfo{
+- (void)setAppInfo:(AppInfo *)appInfo {
     _appInfo = appInfo;
     
     self.label.text = appInfo.name;
@@ -32,7 +44,7 @@
  *
  *  @param button
  */
-- (IBAction)click:(UIButton *)button{
+- (IBAction)click:(UIButton *)button {
    
     //添加一个UILabel到界面上
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake((self.superview.frame.size.width- 160)/2, self.superview.frame.size.height - 240, 160, 40)];
@@ -57,10 +69,10 @@
     [UIView animateWithDuration:1.0f animations:^{
         NSLog(@"动画开始");
         label.alpha = 1.0;
-    }completion:^(BOOL finished){
+    } completion:^(BOOL finished) {
         [UIView animateWithDuration:2.0 animations:^{
             label.alpha = 0.0;
-        }completion:^(BOOL finished){
+        } completion:^(BOOL finished) {
             NSLog(@"动画完成");
             [label removeFromSuperview];
         }];

@@ -25,7 +25,7 @@
 //}
 
 /** 使用字典实例化模型 */
-- (instancetype)initWithDict:(NSDictionary *)dict{
+- (instancetype)initWithDict:(NSDictionary *)dict {
     if (self = [super init]) {
         // KVC - key value coding键值编码
         // 是一种间接修改/读取对象属性的一种方法
@@ -42,11 +42,11 @@
 }
 
 /**类方法可以快速实例化一个对象*/
-+ (instancetype)appInfoWithDict:(NSDictionary *)dict{
++ (instancetype)appInfoWithDict:(NSDictionary *)dict {
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)appList{
++ (NSArray *)appList {
     NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil]];
     
     //创建一个临时数组
