@@ -30,7 +30,7 @@
         [self.view addSubview:_cover];
         _cover.alpha = 0.0;
         
-        [_cover addTarget:self action:@selector(smallImage:) forControlEvents:UIControlEventTouchUpInside];
+        [_cover addTarget:self action:@selector(bigImage) forControlEvents:UIControlEventTouchUpInside];
     }
     return _cover;
 }
@@ -44,37 +44,32 @@
 }
 
 /**
- *  大图
+ *  大小图切换
  */
 - (IBAction)bigImage {
-    //1.添加蒙板
-    [self cover];
-    
-    //2.将图像按钮弄到最前面
-    [self.view bringSubviewToFront:self.iconButton];
-    
-    //3.放大图像按钮
-    CGFloat w = self.view.bounds.size.width;
-    CGFloat h = w;
-    CGFloat y = (self.view.bounds.size.height - h) * 0.5;
-    
-    [UIView animateWithDuration:1.0f animations:^{
-        self.iconButton.frame = CGRectMake(0, y, w, h);
-        self.cover.alpha = 1.0;
-    }];
-}
+    if (self.cover.alpha == 0.0) {
+        //将图像按钮弄到最前面
+        [self.view bringSubviewToFront:self.iconButton];
+        
+        //放大图像按钮
+        CGFloat w = self.view.bounds.size.width;
+        CGFloat h = w;
+        CGFloat y = (self.view.bounds.size.height - h) * 0.5;
+        
+        [UIView animateWithDuration:1.0f animations:^{
+            self.iconButton.frame = CGRectMake(0, y, w, h);
+            self.cover.alpha = 1.0;
+        }];
+    } else {
+        //动画一旦定义，马上开始
+        [UIView animateWithDuration:1.0 animations:^{
+            //将动画放回初始位置
+            self.iconButton.frame = CGRectMake(85, 113, 150, 150);
+            //蒙板逐渐变透明
+            self.cover.alpha = 0.0;
+        }];
+    }
 
-/**
- *  小图
- */
-- (void)smallImage:(UIButton *)cover {
-    //动画一旦定义，马上开始
-    [UIView animateWithDuration:1.0 animations:^{
-        //将动画放回初始位置
-        self.iconButton.frame = CGRectMake(85, 113, 150, 150);
-        //蒙板逐渐变透明
-        cover.alpha = 0.0;
-    }];
 }
 
 @end
